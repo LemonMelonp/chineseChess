@@ -1,0 +1,89 @@
+.dy-tip {
+    width: 900px;
+    margin: 20px auto;
+    color: #04cebb;
+    font-size: large;
+    font-style: oblique;
+}
+.dy-container{
+    overflow: hidden;
+    width: 900px;
+    margin: 20px auto;
+    position: relative;
+    background: url("../img/BgBoard.jpeg") round;
+}
+.dy-game-red{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("../img/redBlur.png") no-repeat 0 0;
+}
+.dy-game-blue {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("../img/blueBlur.png") no-repeat 0 0;
+}
+.dy-game-k {
+    width: 100px;
+    height: 100px;
+    float: left;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.dy-middle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    top: 440px;
+    left: -150px;
+    text-align: center;
+    color: #ffffff;
+    background: rgb(117, 117, 117);
+    font-size: 100px;
+    border-radius: 50%;
+    border: 10px #f75b0e solid;
+    padding: 10px;
+    box-shadow: 2px 2px #000;
+}
+.dy-middle-anim {
+    animation: 4s point;
+}
+@keyframes point {
+    0%{left:-150px}
+    50%{left:390px}
+    100%{left:-150px}
+}
+.dy-game-over {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.dy-game-over-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 320px;
+    height: 160px;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+    background: #009688;
+    color: #ffffff;
+    border-radius: 80px;
+    box-shadow: 0 10px 20px #028377;
+}
+.dy-game-over-text:hover {
+    background: #ffffff;
+    color: #009688;
+    box-shadow: 0 10px 20px #000000;
+    cursor: pointer;
+}

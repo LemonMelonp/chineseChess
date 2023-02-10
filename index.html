@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <title>HTML5中国象棋游戏DEMO演示</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="yes"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device=width,initial-scale=1,maximum-scale=1" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+
+    <div class="dy-tip">玩法：车走直线、马走日、象走田、士走斜线、将/帅走中心、隔山打炮、兵卒只能向前走。</div>
+    <div class="dy-tip">玩法：默认红方先手。</div>
+    <div class="dy-container">
+        <div id="checkerboard">
+            <div class="dy-game-k" dy-row="1" dy-col="1" dy-name="blueCar" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="2" dy-name="blueHorse" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="3" dy-name="blueElephant" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="4" dy-name="blueSoldier" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="5" dy-name="blueGeneral" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="6" dy-name="blueSoldier2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="7" dy-name="blueElephant2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="8" dy-name="blueHorse2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="1" dy-col="9" dy-name="blueCar2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="1" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="7" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="8" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="2" dy-col="9" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="1" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="2" dy-name="blueCannon" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="7" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="8" dy-name="blueCannon2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="3" dy-col="9" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="1" dy-name="bluePawn" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="3" dy-name="bluePawn2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="5" dy-name="bluePawn3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="7" dy-name="bluePawn4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="8" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="4" dy-col="9" dy-name="bluePawn5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="1" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="7" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="8" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="5" dy-col="9" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="1" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="7" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="8" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="6" dy-col="9" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="1" dy-name="redPawn" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="3" dy-name="redPawn2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="5" dy-name="redPawn3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="7" dy-name="redPawn4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="8" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="7" dy-col="9" dy-name="redPawn5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="1" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="2" dy-name="redCannon" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="7" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="8" dy-name="redCannon2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="8" dy-col="9" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="1" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="3" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="4" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="5" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="6" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="7" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="8" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="9" dy-col="9" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="1" dy-name="redCar" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="2" dy-name="redHorse" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="3" dy-name="redElephant" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="4" dy-name="redSoldier" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="5" dy-name="redGeneral" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="6" dy-name="redSoldier2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="7" dy-name="redElephant2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="8" dy-name="redHorse2" onclick="btn(this)"></div>
+            <div class="dy-game-k" dy-row="10" dy-col="9" dy-name="redCar2" dy-name="redCar2" onclick="btn(this)"></div>
+        </div>
+        <div class="dy-game-red" id="red" style="display:none;"></div>
+        <div class="dy-game-blue" id="blue" style="display:none;"></div>
+        <div class="dy-middle" id="jiang">将</div>
+    </div>
+    <div class="dy-game-over" id="gameOver" style="display: none;">
+        <div class="dy-game-over-text" onclick="reloadGame()">游戏结束</div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
